@@ -108,6 +108,8 @@ extern crate tokio;
 #[cfg_attr(feature = "tls", macro_use)]
 extern crate tokio_io;
 extern crate tokio_threadpool;
+#[cfg(feature = "tracing-futures")]
+extern crate tracing_futures;
 #[cfg(feature = "websocket")]
 extern crate tungstenite;
 extern crate urlencoding;
